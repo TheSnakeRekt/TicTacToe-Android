@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_game_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C92196F3">
+
+
+    <TableLayout
+        android:id="@+id/glGameBoard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/winnerInfo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-15dp"
+        android:columnCount="3"
+        android:padding="8dp"
+        android:rowCount="3">
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/b0"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="8dp"
+                android:background="@color/colorAccent"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+id/b1"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="8dp"
+                android:background="@color/colorAccent"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+id/b2"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="8dp"
+                android:background="@color/colorAccent"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp" />
+
+        </TableRow>
+
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/b3"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="8dp"
+                android:background="@color/colorAccent"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+id/b4"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="8dp"
+                android:background="@color/colorAccent"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+id/b5"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="8dp"
+                android:background="@color/colorAccent"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp" />
+
+        </TableRow>
+
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/b6"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="8dp"
+                android:background="@color/colorAccent"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+id/b7"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="8dp"
+                android:background="@color/colorAccent"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+id/b8"
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="8dp"
+                android:background="@color/colorAccent"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/winnerInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp"
+        android:padding="8dp"
+        android:textColor="#424242"
+        android:textSize="18sp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="349dp"
+        android:layout_height="222dp"
+        android:layout_below="@+id/glGameBoard"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="34dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginBottom="104dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/buttonNovoId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:text="Novo Jogo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline24"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/buttonSairId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:text="Sair"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/guideline24" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintGuide_percent="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textPlayerNameId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline16"
+            app:layout_constraintEnd_toStartOf="@+id/guideline25"
+            app:layout_constraintHorizontal_bias="0.52"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline17" />
+
+        <TextView
+            android:id="@+id/textSkillNameId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:text="Skills"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline16"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.515"
+            app:layout_constraintStart_toStartOf="@+id/guideline26"
+            app:layout_constraintTop_toTopOf="@+id/guideline17" />
+
+        <TextView
+            android:id="@+id/textPlayerScoreId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#BFF5DD53"
+            app:layout_constraintBottom_toTopOf="@+id/guideline16"
+            app:layout_constraintEnd_toStartOf="@+id/guideline24"
+            app:layout_constraintHorizontal_bias="0.535"
+            app:layout_constraintStart_toStartOf="@+id/guideline25"
+            app:layout_constraintTop_toTopOf="@+id/guideline17" />
+
+        <TextView
+            android:id="@+id/textSkillsScoreId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#BFF5DD53"
+            app:layout_constraintBottom_toTopOf="@+id/guideline16"
+            app:layout_constraintEnd_toStartOf="@+id/guideline26"
+            app:layout_constraintStart_toStartOf="@+id/guideline24"
+            app:layout_constraintTop_toTopOf="@+id/guideline17" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.25" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.75" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.49689442" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.1" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</RelativeLayout>
